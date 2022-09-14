@@ -14,13 +14,16 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
-  <div class="container">
+  <main class="container">
 
-    <img src="/product-preview-card-component-main/images/image-product-desktop.jpg" alt="" class="img">
-    <img src="/product-preview-card-component-main/images/image-product-mobile.jpg" alt="" class="img-2">
+    <picture>
+      <source media="(min-width:670px)" srcset="./images/image-product-desktop.jpg">
+      <source media="(max-width:669px)" srcset="./images/image-product-mobile.jpg">
+      <img src="./images/image-product-mobile.jpg" alt="product-preview-card" style="width:auto;">
+    </picture>
     
     
-    <main class="main">
+    <section class="main">
       <div class="preview">
         PERFUME
       </div>
@@ -44,9 +47,9 @@
         <img class="cart" src="/product-preview-card-component-main/images/icon-cart.svg" alt="cart">
         Add to Cart
       </button>
-    </main>
+    </section>
 
-  </div>
+  </main>
   
 </body>
 </html>
